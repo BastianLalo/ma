@@ -1,0 +1,232 @@
+/*Pseudoclase root con declaraciòn de variables*/
+:root{
+    ---Color1:#000000;
+    ---Color2:#7628cf;
+    ---Color3:#f3f161;
+    ---Color4:#e7bcbc;
+    ---Color5:#885bbb;
+    ---Color6:#dda0dd;
+}
+/*Convercion de 1rem a 10px*/
+html{font-size: 62.5%;display: block;}
+body{font-size: 16px;background-color:var(---Color6);}
+/*Cabezera = HEADER*/
+header{display: flex;}
+.imglogo{
+    width: 25rem;
+    height: 11rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.tp{
+    margin: 0 auto;
+    font-family: 'Kanit', sans-serif;
+    font-weight:400;
+    font-size: 8rem;
+    color: var(---Color2);
+}
+.tp span{
+    font-size: 5rem;
+    color: var(---Color3);
+}
+
+/*Barra de Navegacion NAV*/
+.nav-ng{
+    height: 5rem;
+    display: flex;
+    background-color: var(---Color3);
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 0.2rem solid var(---Color1);
+    box-shadow: 10px var(---colorT);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.nav-ng a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.nav-ng a span{
+    margin-right: 1rem;
+}
+.nav-ng a:hover{
+    height: 5rem;
+    background-color: var(---Color4);
+}
+/*Code de las cartas de los Productos*/
+button {
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.page-nav {
+    background-color:var(---Color3);
+    border: 1px solid black;
+    position: relative;
+    border: 0.2rem solid var(---Color1);
+    box-shadow: 10px var(---colorT);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.page-nav h1 {
+    margin: 20px;
+}
+
+.button-checkout {
+    background-color:var(---Color6);/*color del backgrund del boton en rosa claro*/
+    color: black;
+    border: 2px solid var(---Color2); /* Color del boton pagar Morado*/
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.button-checkout:hover {
+    background-color:var(---Color2); /*morado */
+    color:whitesmoke;
+}
+/*Code de los las cartas de los Mangas*/
+.page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-container {
+    width:auto;
+    margin: 15px;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.product-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.product-container img {
+    width: 300px;
+}
+
+.product-container h1 {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.button-add {
+    background-color:var(---Color6);
+    color: black;
+    border: 3px solid var(---Color3); /* amarillo */
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+  
+.button-add:hover {
+    background-color:var(---Color2); /* Bluepurple */
+    color: white;
+}
+/*derechos de autor*/
+#dere{
+    margin-top: 1rem;
+    margin-bottom: auto;
+    color: var(---colorU);
+    border-style: solid;
+    border-color: var(---colorU);
+    box-shadow: 2px 2px 8px 4px var(---colorT);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: #f3f161;
+    
+}
+#dere>h3{
+    display: grid;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-items: center;
+    text-decoration: underline;}
+
+/*medidas para pantallas de Celulares*/
+@media only screen and (max-width: 800px) {
+    .Contenedor{
+        max-width:400px ;
+    }
+    .div{
+        width: 15rem;
+        height: 14rem;
+        margin-top: 0.3rem;
+        margin-bottom: auto;
+    }
+    .img{
+        width: 180px;
+        height: 200px;
+    }
+    .imglogo{
+        width: 120px;
+        height: 10rem;
+    }
+    .tp{
+        font-size: 50px;
+    }
+    .tp span{
+        margin-top: auto;
+        font-size: 40px;
+    }
+    .page-nav{
+        margin-top: auto;
+        width: auto;
+    }
+    .page-nav h1{
+        font-size: 12.4px;
+    }
+    .button-checkout{
+        width: 100px;
+    }
+    #checkout{font-size: 10px;}
+    button#checkout.button-checkout{
+        font-size: 9px;
+        height: 35px;
+    }
+    }
+    /*medidas para pantallas de Tablet*/
+    @media only screen and (max-width: 1000px) {
+        .Contenedor{
+            max-width:800px ;
+        }
+        .div{
+            width: 15rem;
+            height: auto;
+            margin-top: 0.3rem;
+            margin-bottom: auto;
+        }
+        .img{
+            width:150px;
+            height: 9rem;
+        }
+        }
+        

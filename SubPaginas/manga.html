@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Grupo_MangaBuy">
+    <meta name="description" content="Manga Buy es una Web de Chile para Comprar mangas de todo tipo dentro del pais.">
+        <title>MrNess</title>
+        <!--Icono de la Pág-->
+        <link rel="icon" href="../multimedia/log.ico">
+        <!--Enlaces de gogle fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+        <!--Enlaces de google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!--Enlace a css local-->
+        <link rel="stylesheet" href="../css/mangas.css">
+        <!--Enlace de JavaScript-->
+        <script src="../scripts.js"></script>
+    </head>
+<body>
+    <main class="Contenedor"><!--Contenedor de la pagina-->
+        <header>
+            <img class="imglogo" src="../multimedia/Logo.gif" alt="Logo">
+            <h1 class="tp">Manga<span>Buy</span></h1>
+        </header>
+        <nav class="nav-ng">
+            <a href="../i.html"><span class="material-symbols-outlined">
+                home
+                </span>Inicio</a>
+        </nav>
+        <div class="page-nav">
+            <h1>Lista de Mangas Disponibles a la Venta</h1>
+            <button id="checkout" class="button-checkout" onclick="pay()">Total a Pagar</button>
+        </div>
+        <div class="page-content">
+            <div class="product-container">
+                <h3>Jujutsu Kaisen Guerra De Hechiceros</h3>
+                <img src="../multimedia/Jujutsu_Kaisen_-_Guerra_De_Hechiceros_00_-_Español.jpg" />
+                <h1>$10</h1>
+                <button class="button-add" onclick="add('product-1', 10)">Agregar</button>
+            </div>
+    
+            <div class="product-container">
+                <h3>Tokyo Revengers Vol 4</h3>
+                <img src="../multimedia/MangaTokyo.jpg" />
+                <h1>$12</h1>
+                <button class="button-add" onclick="add('product-2', 12)">Agregar</button>
+            </div>
+    
+            <div class="product-container">
+                <h3>Jujutsu Kaisen 01</h3>
+                <img src="../multimedia/Manga_Jujutsu_Kaisen_01.jpg" />
+                <h1>$10</h1>
+                <button class="button-add" onclick="add('product-3', 10)">Agregar</button>
+            </div>
+    
+            <div class="product-container">
+                <h3>One Piece 04</h3>
+                <img src="../multimedia/One_Piece_04_-_Español.jpg" />
+                <h1>$12</h1>
+                <button class="button-add" onclick="add('product-4', 12)">Agregar</button>
+            </div>
+    
+            <div class="product-container">
+                <h3>Incluso si tiene la boca rasgada, yo la amo</h3>
+                <img src="../multimedia/incluso-si-tiene-la-boca-rasgada-yo-la-amo.png" />
+                <h1>$8</h1>
+                <button class="button-add" onclick="add('product-5', 8)">Agregar</button>
+            </div>
+    
+            <div class="product-container">
+                <h3>Globin Slayer Vol 1</h3>
+                <img src="../multimedia/Globin_Slayer_Vol_1_Español.jpg" />
+                <h1>$10</h1>
+                <button class="button-add" onclick="add('product-6', 10)">Agregar</button>
+            </div>
+            <div class="product-container">
+                <h3>Demon Slayer:Kimetsu No Yaiba Vol 23</h3>
+                <img src="../multimedia/Demon_Slayer_Kimetsu_No_Yaiba_Vol_23.jpg" />
+                <h1>$9</h1>
+                <button class="button-add" onclick="add('product-7', 9)">Agregar</button>
+            </div>
+            <div class="product-container">
+                <h3>Jujutsu Kaisen Vol 14</h3>
+                <img src="../multimedia/Jujutsu_Kaisen_Vol_14.jpg" />
+                <h1>$10</h1>
+                <button class="button-add" onclick="add('product-8', 10)">Agregar</button>
+            </div>
+            <div class="product-container">
+                <h3>Jujutsu Kaisen Vol 15</h3>
+                <img src="../multimedia/Jujutsu_Kaisen_Vol_15.jpg" />
+                <h1>$8</h1>
+                <button class="button-add" onclick="add('product-9', 8)">Agregar</button>
+            </div>
+            <div class="product-container">
+                <h3>One Piece Vol 98</h3>
+                <img src="../multimedia/One_Piece_Vol_98.jpg" />
+                <h1>$7</h1>
+                <button class="button-add" onclick="add('product-10', 7)">Agregar</button>
+            </div>
+            <div class="product-container">
+                <h3>Kaguya Sama Love is war Vol 3</h3>
+                <img src="../multimedia/Kaguya_Sama_Love_is_war_Vol_3.jpg" />
+                <h1>$10</h1>
+                <button class="button-add" onclick="add('product-10', 10)">Agregar</button>
+            </div>
+            <div class="product-container">
+                <h3>Kaguya Sama Love is war Vol 1</h3>
+                <img src="../multimedia/Kaguya_sama_love_is_war_Vol_1.jpg" />
+                <h1>$10</h1>
+                <button class="button-add" onclick="add('product-10', 10)">Agregar</button>
+            </div>
+            <div class="product-container">
+                <h3>Shomin Sample:I Was Abducted by <br> an EliteAll Girls School  as a<br> Sample Commoner Vol 12</h3>
+                <img src="../multimedia/Shomin_Sample.jpg" />
+                <h1>$10</h1>
+                <button class="button-add" onclick="add('product-10', 10)">Agregar</button>
+            </div>
+            <div class="product-container">
+                <h3>My Youth Romantic Comedy Is Wrong <br> As I Expected Vol 1 </h3>
+                <img src="../multimedia/My_youth_romantic_comedy_is_wrong_as_i_expected_Vol_1.jpg" />
+                <h1>$10</h1>
+                <button class="button-add" onclick="add('product-10', 10)">Agregar</button>
+            </div>
+            <div class="product-container">
+                <h3>A sister´s all you need Vol 1</h3>
+                <img src="../multimedia/A_sisters_all_you_need_Vol_1.jpg" />
+                <h1>$14</h1>
+                <button class="button-add" onclick="add('product-10', 14)">Agregar</button>
+            </div>
+        </div>
+        <!--Footer con encabezado declarando los derechos de autor-->
+        <footer id="dere">
+            <h3>Copyright ©  2022 · MangaBuy · Web hecha con MangaBuy · Textos legales.</h3>
+        </footer>
+    </main>
+    <!--       _
+       .__(.)< (MEOW)
+        \___)   
+ ~~~~~~~~~~~~~~~~~~-->
+</body>
+</html>

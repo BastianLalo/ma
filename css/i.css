@@ -1,0 +1,437 @@
+/*Pseudoclase root con declaraciòn de variables*/
+:root{
+    ---Color1:#000000;
+    ---Color2:#7628cf;
+    ---Color3:#f3f161;
+    ---Color4:#e7bcbc;
+    ---Color5:#885bbb;
+    ---Color6:#dda0dd;
+}
+/*Convercion de 1rem a 10px*/
+html{font-size: 62.5%;display: block;}
+body{font-size: 16px;background-color:var(---Color6);}
+/*Cabezera = HEADER*/
+header{display: flex;}
+.imglogo{
+    width: 25rem;
+    height: 11rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.tp{
+    margin: 0 auto;
+    font-family: 'Kanit', sans-serif;
+    font-weight:400;
+    font-size: 8rem;
+    color: var(---Color2);
+}
+.tp span{
+    font-size: 5rem;
+    color: var(---Color3);
+}
+
+/*Barra de Navegacion NAV*/
+.nav-ng{
+    height: 5rem;
+    display: flex;
+    background-color: var(---Color3);
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 0.2rem solid var(---Color1);
+    box-shadow: 10px var(---colorT);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.nav-ng a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.nav-ng a span{
+    margin-right: 1rem;
+}
+.nav-ng a:hover{
+    height: 5rem;
+    background-color: var(---Color4);
+}
+
+/*Sección SECTION*/
+.box1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: 40rem;
+    border: 0.2rem solid var(---Color1);
+    box-shadow: 10px var(---colorT);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color:var(---Color5);
+
+}
+.div{
+    border: .2rem dotted whitesmoke;
+    width: 50rem;
+    height: auto;
+    margin-bottom: auto;
+    text-align: justify;
+    margin-top: auto;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+section>.div>p{
+    font-size: 1.5rem;
+}
+
+.img{
+    display: block;
+    width:26rem;
+    height:20rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nombreservicio{
+    color: purple;
+    font-size: 2.3rem;
+    display: flex;
+}
+.pie{
+    background: var(---Color3);
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    padding: 1rem;
+    text-align: center;
+    width: auto;
+    margin-left: 40%;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.pie a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(---Color2);
+}
+.div>h3{
+    display: grid;
+    justify-content: space-evenly;
+    justify-items:left;
+}
+.div>p{
+    display: grid;
+    justify-content: space-evenly;
+    justify-items:left;
+}
+/*CODE inicio de servicio*/
+   section.div .divi1{
+    margin-left: 1rem;
+    width:auto;
+   }
+   section.div .divi2{
+   width: auto;
+   }
+/*CODE fin servicio*/
+
+/*Barra lateral con section*/
+.box-i{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+aside{
+    width: auto;
+    height: 40rem;
+    background-color: var(---Color5);
+    border: 0.2rem solid var(---Color1);
+    box-shadow: 2px 2px 8px 4px var(---colorT);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-top: 1rem;
+}
+.sec-a{
+    background-color:var(---Color5);
+    margin-top: 1rem;
+    display: block;
+    justify-content: space-around;
+    float: right;
+    width: auto;
+    height: 54rem;
+    text-align: center;
+}
+/*Code de imagen video de los mangas*/
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 280px;
+    height: 440px;
+    margin-bottom: 18px;
+}
+.image{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    object-fit: cover;
+    animation: cycle 1.5s linear infinite 0s forwards;
+    -webkit-animation: cycle 1.5s linear infinite 0s forwards;
+    animation-play-state: running;
+    box-shadow: 2px 2px 8px 4px var(---colorT);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    
+}
+.container:hover .image{
+    animation-play-state: running;
+}
+.image-1{
+    z-index: 4;
+}
+.image-2{
+    z-index: 3;
+    animation-delay: 6.05s;
+}
+.image-3{
+    z-index: 2;
+    animation-delay: 5.05s;
+}
+.image-4{
+    z-index: 1;
+    animation-delay: 4.05s;
+}
+.image-5{
+    z-index: 0;
+    animation-delay: 3.05s;
+}
+@keyframes cycle{
+    from{
+        visibility: visible;
+        z-index: 6;
+    }
+    to{
+        visibility: hidden;
+        z-index: 0;
+    }
+}
+/*Code de aside, Enca, sp*/
+.inf-n{
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: auto;
+    height: 55rem;
+}
+.enc3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.enc3 ,.sp{
+
+    font-size: 3rem;
+}
+.inf-n h3{
+    color: var(---Color1);
+}
+.sp{
+    font-size: 2.3rem;
+}
+.color1{
+    color: var(---Color3);
+}
+.color2{
+    color: var(---Color2);
+}
+.contain{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 380px;
+    height: 400px;
+}
+.imag{
+    size: cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: cycle 1.5s linear infinite 0s forwards;
+    -webkit-animation: cycle 1.5s linear infinite 0s forwards;
+    animation-play-state: running;
+    box-shadow: 2px 2px 8px 4px var(---colorT);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    
+}
+.containe:hover .image{
+    animation-play-state: running;
+}
+.imag-1{
+    z-index: 2;
+    
+}
+.imag-2{
+    z-index: 1;
+    animation-delay: 1.05s;
+   
+}
+@keyframes cycle{
+    from{
+        visibility: visible;
+        z-index: 4;
+    }
+    to{
+        visibility: hidden;
+        z-index: 0;
+    }
+}
+/*derechos de autor*/
+#dere{
+    margin-top: 1rem;
+    margin-bottom: auto;
+    color: var(---colorU);
+    border-style: solid;
+    border-color: var(---colorU);
+    box-shadow: 2px 2px 8px 4px var(---colorT);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: #f3f161;
+    
+}
+#dere>h3{
+    display: grid;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-items: center;
+    text-decoration: underline;}
+/*medidas para pantallas de Celulares*/
+@media only screen and (max-width: 800px) {
+.Contenedor{
+    max-width:400px ;
+}
+.box1{
+    max-width: 700px;
+}
+.div{
+    width: 14rem;
+    height: 14rem;
+    margin-top: 0.3rem;
+    margin-bottom: auto;
+}
+.nombreservicio{
+    font-size: 15px;
+    margin-left: auto;
+    margin-right:auto;
+}
+.div p {
+    font-size: 10px;
+}
+.img{
+    width: 180px;
+    height: 300px;
+}
+aside{
+    width: auto;
+    height: 40rem;
+    
+}
+.imglogo{
+    width: 120px;
+    height: 10rem;
+}
+.pie{
+    margin-left: 20%;
+}
+.tp{
+    font-size: 50px;
+}
+.tp span{
+    font-size: 40px;
+}
+.sec-a{
+    height: 540px;
+}
+.container{
+    width: 280px;
+    height: 400px;
+}
+.image{
+    font-size: 100px;
+    
+}
+.se{
+    height:370px;
+}
+.enc3,.sp{
+    font-size: 20px;
+}
+}
+/*medidas para pantallas de Tablet*/
+@media only screen and (max-width: 1000px) {
+    .Contenedor{
+        max-width:800px ;
+    }
+    .box1{
+        max-width: 800px;
+    }
+    aside{
+        width: auto;
+    }
+    .div{
+        width: 15rem;
+        height: auto;
+        margin-top: 0.3rem;
+        margin-bottom: auto;
+    }
+    .img{
+        width:150px;
+        height: 130px;
+    }
+    aside{
+        width: auto;
+        height: 40rem;
+        
+    }
+    }
+    

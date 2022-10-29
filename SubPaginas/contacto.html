@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Grupo_MangaBuy">
+        <meta name="description" content="Manga Buy es una Web de Chile para Comprar mangas de todo tipo dentro del pais.">
+        <title>MangasBuy</title>
+        <!--Icono de la Pág-->
+        <link rel="icon" href="../multimedia/log.ico">
+        <!--Enlaces de gogle fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <!--Enlaces de google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!--Enlace a css local-->
+        <link rel="stylesheet" href="../css/contacto.css">
+    </head>
+<body>
+    <main class="Contenedor"><!--Contenedor de la pagina-->
+        <header>
+            <img class="imglogo" src="../multimedia/Logo.gif" alt="Logo">
+            <h1 class="tp">Manga<span>Buy</span></h1>
+        </header>
+        <nav class="nav-ng">
+            <a href="../i.html"><span class="material-symbols-outlined">
+                home
+                </span>Inicio</a>
+        </nav>
+
+        <div class="page-nav">
+            <h1>Formulario para Comunicarse con Nosotros MangaBuy.</h1>
+        </div>
+        <!--Email Send-->
+    <div id="EmSend">
+        <form action="#" target="" method="get" name="formDatosPersonales">
+
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+        
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido"/>
+        
+            <label for="email" />Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required />
+        <br>
+            <label for="asunto">Asunto</label>
+            <select name="selector">
+                <option value="Pedido">Consultar estado del Pedido</option>
+                <option value="Consulta_Manga" selected>Consultar Manga a Pedir</option>
+            </select>
+        <br>
+        <br>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" for="mensaje" placeholder="Describe brevemente en menos de 300 carácteres." maxlength="300"></textarea>
+            
+            <input type="submit" name="enviar" value="Enviar Datos"/>
+        </form>
+    </div>
+    <!--Footer con encabezado declarando los derechos de autor-->
+        <footer id="dere">
+            <h3>Copyright ©  2022 · MangaBuy · Web hecha con MangaBuy · Textos legales.</h3>
+        </footer>
+    </main>
+    <!--       _
+       .__(.)< (MEOW)
+        \___)   
+ ~~~~~~~~~~~~~~~~~~-->
+</body>
+</html>
